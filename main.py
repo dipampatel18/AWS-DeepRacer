@@ -19,7 +19,7 @@ def reward_function(params):
     marker_2 = 0.25 * track_width
     marker_3 = 0.5 * track_width
 
-	# Keep the Agent on the Track and Progressing
+    # Keep the Agent on the Track and Progressing
     if (all_wheels_on_track and (steps > 0)):
         reward = ((progress / steps) * 100) + (speed ** 2)
         # Higher Reward if the Agent is Closer to Center Line and vice versa
