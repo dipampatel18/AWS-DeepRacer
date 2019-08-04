@@ -78,7 +78,7 @@ When I initially trained for a few times, I did a few mistakes
 
 - During training, the episodic rewards were more or less the same as my previous trials, however, the percentage of track completion did slightly increase which indicated that the agent was learning the optimal policy.
 
-- In the evaluation phase, out of 5 trial runs, the agent could complete the entire track twice in 22.2 and 23.4 seconds respectively. 
+- In the evaluation phase, out of 5 trial runs, the agent could complete the entire track twice in 23.04 and 22.04 seconds respectively. 
 
 ### References
 
