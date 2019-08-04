@@ -2,9 +2,9 @@
 
 Trained an AWS DeepRacer Robot Car using Reinforcement Learning in AWS SageMaker and RoboMaker
 
-
-![AWS DeepRacer](/images/DeepRacer.gif)
-
+<p align="center">
+  <img width="580" height="320" src="/images/DeepRacer.gif">
+</p>
 
 AWS DeepRacer is a 1/18th scale race car which gives you an interesting and fun way to get started with reinforcement learning (RL). RL is an advanced machine learning (ML) technique which takes a very different approach to training models than other machine learning methods. Its super power is that it learns very complex behaviors without requiring any labeled training data, and can make short term decisions while optimizing for a longer term goal.
 
@@ -64,6 +64,21 @@ The DeepRacer League is an important component of AWS DeepRacer. The DeepRacer L
 
 With the DeepRacer League, you can have your development effort compared with other AWS DeepRacer developers in a physical or virtual racing event. Not only do you get a chance to win prizes, you also have a way to measure your reinforcement learning model. You can create opportunities to share your insights with other participants, to learn from each other, and to inspire each other.
 
+### My Approach
+
+When I initially trained for a few times, I did a few mistakes
+
+- Was trying to control too many parameters of the agent and which ultimately messed up with its learning
+
+- Created multiple parameter conditions instead of having them all under just one/few conditions. As a result, the overall reward for the episode did increase, but it failed to learn the optimal policy
+
+- Reduced the parameters under consideration and focused on having an optimal policy to achieve the target of staying within the track and completing the entire track
+
+- Staying within the track was the first condition to be achieved which was rewarded based on the percent of track completed and its current speed. Thereafter, driving on the center lane with minimal deviation was the next goal for the reward function. Avoiding unnecessary steering was the final goal.
+
+- During training, the episodic rewards were more or less the same as my previous trials, however, the percentage of track completion did slightly increase which indicated that the agent was learning the optimal policy.
+
+- In the evaluation phase, out of 5 trial runs, the agent could complete the entire track twice in 22.2 and 23.4 seconds respectively. 
 
 ### References
 
@@ -77,3 +92,4 @@ With the DeepRacer League, you can have your development effort compared with ot
 
 - [Online Course on AWS DeepRacer: Driven by Reinforcement Learning](https://www.aws.training/learningobject/wbc?id=32143)
 
+- [AWS DeepRacer Workshops](https://github.com/aws-samples/aws-deepracer-workshops)
