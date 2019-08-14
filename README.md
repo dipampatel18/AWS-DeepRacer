@@ -70,6 +70,8 @@ In the evaluation phase, out of 5 trial runs, the agent could complete the entir
   <img width="700" height="380" src="/images/Evaluation Results.png">
 </p>
 
+My next goal is to develop a model in which the agent has minimum steering angle deviation and high speed to complete the track in half the time.
+
 ### References
 
 - [AWS DeepRacer Homepage](https://aws.amazon.com/deepracer/)
