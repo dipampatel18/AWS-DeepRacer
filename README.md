@@ -70,7 +70,7 @@ In the evaluation phase, out of 5 trial runs, the agent could complete the entir
   <img width="700" height="380" src="/images/Evaluation Results.png">
 </p>
 
-My next goal is to develop a model in which the agent has minimum steering angle deviation and high speed to complete the track in half the time.
+My next goal is to reduce this time by half by mitigating the zig-zag behavior and increasing the speed of the agent.
 
 ### References
 
