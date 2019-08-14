@@ -38,16 +38,16 @@ The AWS DeepRacer console is a graphical user interface to interact with the AWS
 
 ### My Approach
 
-When I initially trained for a few times, I did a few mistakes
+When I initially trained for a few times, I did a two mistakes
 
 - Was trying to control too many parameters of the agent and which ultimately messed up with its learning
 
 - Created multiple parameter conditions instead of having them all under just one/few conditions. As a result, the overall reward for the episode did increase, but it failed to learn the optimal policy
 
-I took into account those mistakes and the changes were implemented on the final model 'fastest car alive'. It was trained for 5 hours with the following training configurations and with very slight modification of the hyperparameters.
+I implemented the changes on the final model 'fastest car alive'. It was trained for 5 hours with the following training configurations and a slight modification of the hyperparameters from their default values.
 
 <p align="center">
-  <img width="580" height="320" src="/images/Training Configuration.png">
+  <img width="700" height="380" src="/images/Training Configuration.png">
 </p>
 
 Reduced the parameters under consideration and focused on having an optimal policy to achieve the target of staying within the track and completing the entire track.
@@ -55,19 +55,19 @@ Reduced the parameters under consideration and focused on having an optimal poli
 Staying within the track was the first condition to be achieved which was rewarded based on the percent of track completed and its current speed. Thereafter, driving on the center lane with minimal deviation was the next goal for the reward function. Avoiding unnecessary steering was the final goal. Following was the action space for the agent.
 
 <p align="center">
-  <img width="580" height="320" src="/images/Action Space.png">
+  <img width="700" height="380" src="/images/Action Space.png">
 </p>
 
 During training, the episodic rewards were more or less the same as my previous trials, however, the percentage of track completion did slightly increase which indicated that the agent was learning the optimal policy.
 
 <p align="center">
-  <img width="580" height="320" src="/images/Training Completed.png">
+  <img width="700" height="380" src="/images/Training Completed.png">
 </p>
 
 In the evaluation phase, out of 5 trial runs, the agent could complete the entire track twice in 23.04 and 22.04 seconds respectively. 
 
 <p align="center">
-  <img width="580" height="320" src="/images/Evaluation Results.png">
+  <img width="700" height="380" src="/images/Evaluation Results.png">
 </p>
 
 ### References
